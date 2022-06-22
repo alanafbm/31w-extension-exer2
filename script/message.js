@@ -13,11 +13,15 @@
         elmBoite__modale.classList.add('boite__modale')
         let elmBody = document.querySelector('body')
         elmBody.appendChild(elmBoite__modale);
+        let mon_petit_contenu = document.querySelector('.code__adresse').innerHTML
+        elmBoite__contenu.innerHTML =  mon_petit_contenu
     }
-
+    
+    function detruire_boite_modale(){
+        elmBoite__modale.removeChild(elmBoite__X)
+        elmBody.removeChild(elmBoite__modale)
+    }
     creer_boite_modale()
-
-
 
     elmOK.addEventListener('mousedown', function(){
         console.log('Bravo le script fonctionne')
