@@ -1,9 +1,9 @@
 /*!
 Plugin Name: 31w- Alana theme du cours
-Plugin URI: https://github.com/alanafbm/31w-extension-exer2
+Plugin URI: 
 Author: Alana Moraes
 Author URI: http://github.com/alanafbm/
-Description: Plugin de base pour le cours de 31W
+Description: Plugin de base pour le cours de 31W - exercice2
 License URI: LICENSE
 Text Domain: 31-w
 */
@@ -12,11 +12,14 @@ Text Domain: 31-w
   margin: 10px;
   padding: 10px;
   border-left: 4px solid #005;
-  background-color: #bbb;
+  background: rgb(63,94,251);
+  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(177,70,252,0.7035189075630253) 100%);
+  color: rgb(0, 0, 0);
 }
 
 .boite__modale {
-  background-color: red;
+  background: rgb(63,94,251);
+  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(177,70,252,0.7035189075630253) 100%);
   position: absolute;
   width: 50vw;
   height: 50vh;
@@ -25,6 +28,7 @@ Text Domain: 31-w
   transform: scale(0);
   opacity: 0;
   transition: transform 1s, opacity 1s;
+  padding: 200px;
 }
 
 .boite__X {
@@ -38,5 +42,11 @@ Text Domain: 31-w
 .boite__modale__ouvrir {
   transform: scale(1);
   opacity: 1;
+}
+
+.elmBoite__contenu{
+    color: white;
+    font-size: 2.4em;
+    text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
