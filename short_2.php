@@ -3,7 +3,7 @@
  * Plugin name: Short_2
  * Description: structure d'extension utilisant plusieurs dossiers et permettant d'afficher une adresse
  * Author: Alana Moraes
- * Plugin URI: https://github.com/alanafbm
+ * Plugin URI: https://github.com/alanafbm/31w-extension-exer2
  */
 function sh2_31w_enqueue()
 {
@@ -25,10 +25,11 @@ add_action('wp_enqueue_scripts', 'sh2_31w_enqueue');
 
 function genere_adresse(){
     /////////////////////////////////////// HTML
-    $contenu = '<code class="code__adresse" style="display:none">';
-    $contenu .= get_the_content();
+    $contenu = '<code class="code__adresse">';
+    $contenu .= "3800, rue Sherbrooke Est Montréal (Québec) H1X 2A2 | 514 254-7131";
     $contenu .= '</code>';
     $contenu .= '<button id="mon_bouton">OK</button>';
     return $contenu;
 }
+
 add_shortcode('adr', 'genere_adresse');
