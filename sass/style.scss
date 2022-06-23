@@ -6,32 +6,32 @@ Author: Alana Moraes
 */
 
 .code__adresse {
-    margin : 10px;
-    padding : 10px;
-    border-left : 4px solid #005;
-    background-color : #bbb;
+  margin: 10px;
+  padding: 10px;
+  border-left: 4px solid #005;
+  background: rgb(63,94,251);
+  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(177,70,252,0.7035189075630253) 100%);
+  color: rgb(0, 0, 0);
 }
 
 .boite__modale {
-    background-color: red;
-    position : absolute;
-    width : 50vw;
-    height : 50vh;
-    top : 25vh;
-    left : 25vw;
-    transform : scale(0);
-    opacity : 0;
-    transition : transform 1s, opacity 1s;
-}
-.boite__X {
-    width : 2rem;
-    height : 2rem;
-    position: absolute;
-    top: 10px;
-    left: 10px;
+  background: rgb(63,94,251);
+  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(177,70,252,0.7035189075630253) 100%);
+  position: absolute;
+  width: 50vw;
+  height: 50vh;
+  top: 25vh;
+  left: 25vw;
+  transform: scale(0);
+  opacity: 0;
+  transition: transform 1s, opacity 1s;
+  padding: 200px;
 }
 
-.boite__modale__ouvrir {
-    transform : scale(1);
-    opacity : 1;
+.boite__X {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
