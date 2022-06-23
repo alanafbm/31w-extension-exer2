@@ -21,6 +21,7 @@
         elmBoite__modale.removeChild(elmBoite__X)
         elmBody.removeChild(elmBoite__modale)
     }
+    
     creer_boite_modale()
 
     elmOK.addEventListener('mousedown', function(){
